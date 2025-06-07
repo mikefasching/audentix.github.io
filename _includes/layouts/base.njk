@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to the Audentix Blog</title>
-  <meta name="description" content="Learn how Audentix ensures compliance and ethical AI certification.">
+  <title>{{ title or "Audentix Blog" }}</title>
+  <meta name="description" content="{{ description or 'Audentix blog article' }}">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 </head>
@@ -24,9 +24,7 @@
   </header>
 
   <main class="max-w-4xl mx-auto py-16 px-6">
-    <p>Welcome to the <strong>Audentix Blog</strong>!<br>
-In this article, we explore how our platform enables AI/ML model audits for compliance and ethical safety.</p>
-
+    {{ content | safe }}
   </main>
 
   <section id="contact" class="bg-blue-50 py-16 px-6 text-center">

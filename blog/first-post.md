@@ -1,7 +1,11 @@
 ---
+layout: layouts/base.njk
 title: Welcome to the Audentix Blog
 description: Learn how Audentix ensures compliance and ethical AI certification.
+tags: [AI, Compliance]
+author: Michael Fasching
 date: 2025-06-07
 ---
 
-We're excited to launch our blog! Here, we'll share insights, updates, and expert guidance on responsible AI development and model certification.
+Welcome to the **Audentix Blog**!  
+In this article, we explore how our platform enables AI/ML model audits for compliance and ethical safety.
