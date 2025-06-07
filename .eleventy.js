@@ -10,6 +10,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("date", function (value, formatStr = "yyyy-MM-dd") {
     return format(new Date(value), formatStr);
   });
+  // Copy images to docs/images
+  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
 
   return {
     dir: {
