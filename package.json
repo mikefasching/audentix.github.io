@@ -1,0 +1,26 @@
+{
+  "name": "audentix.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikefasching/audentix.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikefasching/audentix.github.io/issues"
+  },
+  "homepage": "https://github.com/mikefasching/audentix.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.1"
+  },
+  "description": "",
+  "dependencies": {
+    "date-fns": "^4.1.0"
+  }
+}
