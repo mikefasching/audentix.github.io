@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/post.njk
 title: Welcome to the Audentix Blog
 description: Learn how Audentix ensures compliance and ethical AI certification.
 tags: [AI, Compliance]

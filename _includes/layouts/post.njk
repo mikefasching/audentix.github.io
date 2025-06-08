@@ -1,0 +1,22 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="prose max-w-4xl mx-auto">
+  <h1 class="text-4xl font-bold mb-2">{{ title }}</h1>
+  <p class="text-sm text-gray-500 mb-6">
+    {% if author %}By {{ author }} · {% endif %}
+    {% if date %}{{ date | date("MMMM D, YYYY") }}{% endif %}
+  </p>
+
+  {{ content | safe }}
+
+  {% if tags %}
+    <div class="mt-8">
+      <span class="font-semibold">Tags:</span>
+      {% for tag in tags %}
+        <a href="/tags/{{ tag | slug }}/" class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded mr-2 text-sm hover:underline">{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>
+{% endblock %}
